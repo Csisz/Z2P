@@ -1,0 +1,21 @@
+py detection.py --GPU 0 --test_path test_images/old_w_scratch --output_dir output --input_size full_size
+
+python test.py --Scratch_and_Quality_restore --test_input imgs\test\input --test_mask imgs\test\mask --outputs_dir final_output
+
+[-h] [--name NAME] [--gpu_ids GPU_IDS] [--checkpoints_dir CHECKPOINTS_DIR] [--outputs_dir OUTPUTS_DIR] [--model MODEL] [--norm NORM] [--use_dropout] [--data_type {8,16,32}] [--verbose]
+               [--batchSize BATCHSIZE] [--loadSize LOADSIZE] [--fineSize FINESIZE] [--label_nc LABEL_NC] [--input_nc INPUT_NC] [--output_nc OUTPUT_NC] [--dataroot DATAROOT] [--resize_or_crop RESIZE_OR_CROP]
+               [--serial_batches] [--no_flip] [--nThreads NTHREADS] [--max_dataset_size MAX_DATASET_SIZE] [--display_winsize DISPLAY_WINSIZE] [--tf_log] [--netG NETG] [--ngf NGF] [--k_size K_SIZE] [--use_v2] [--mc MC]     
+               [--start_r START_R] [--n_downsample_global N_DOWNSAMPLE_GLOBAL] [--n_blocks_global N_BLOCKS_GLOBAL] [--n_blocks_local N_BLOCKS_LOCAL] [--n_local_enhancers N_LOCAL_ENHANCERS]
+               [--niter_fix_global NITER_FIX_GLOBAL] [--load_pretrain LOAD_PRETRAIN] [--no_instance] [--instance_feat] [--label_feat] [--feat_num FEAT_NUM] [--load_features] [--n_downsample_E N_DOWNSAMPLE_E] [--nef NEF]   
+               [--n_clusters N_CLUSTERS] [--self_gen] [--mapping_n_block MAPPING_N_BLOCK] [--map_mc MAP_MC] [--kl KL] [--load_pretrainA LOAD_PRETRAINA] [--load_pretrainB LOAD_PRETRAINB] [--feat_gan] [--no_cgan]
+               [--map_unet] [--map_densenet] [--fcn] [--is_image] [--label_unpair] [--mapping_unpair] [--unpair_w UNPAIR_W] [--pair_num PAIR_NUM] [--Gan_w GAN_W] [--feat_dim FEAT_DIM]
+               [--abalation_vae_len ABALATION_VAE_LEN] [--gpu GPU] [--dataDir DATADIR] [--modelDir MODELDIR] [--logDir LOGDIR] [--data_dir DATA_DIR] [--use_skip_model] [--use_segmentation_model]
+               [--spatio_size SPATIO_SIZE] [--test_random_crop] [--contain_scratch_L] [--mask_dilation MASK_DILATION] [--irregular_mask IRREGULAR_MASK] [--mapping_net_dilation MAPPING_NET_DILATION] [--VOC VOC]
+               [--non_local NON_LOCAL] [--NL_fusion_method NL_FUSION_METHOD] [--NL_use_mask] [--correlation_renormalize] [--Smooth_L1] [--face_restore_setting FACE_RESTORE_SETTING] [--face_clean_url FACE_CLEAN_URL]        
+               [--syn_input_url SYN_INPUT_URL] [--syn_gt_url SYN_GT_URL] [--test_on_synthetic] [--use_SN] [--use_two_stage_mapping] [--L1_weight L1_WEIGHT] [--softmax_temperature SOFTMAX_TEMPERATURE] [--patch_similarity]  
+               [--use_self] [--use_own_dataset] [--test_hole_two_folders] [--no_hole] [--random_hole] [--NL_res] [--image_L1] [--hole_image_no_mask] [--down_sample_degradation] [--norm_G NORM_G] [--init_G INIT_G]
+               [--use_new_G] [--use_new_D] [--only_voc] [--cosin_similarity] [--downsample_mode DOWNSAMPLE_MODE] [--ntest NTEST] [--results_dir RESULTS_DIR] [--aspect_ratio ASPECT_RATIO] [--phase PHASE]
+               [--which_epoch WHICH_EPOCH] [--how_many HOW_MANY] [--cluster_path CLUSTER_PATH] [--use_encoded_image] [--export_onnx EXPORT_ONNX] [--engine ENGINE] [--onnx ONNX] [--start_epoch START_EPOCH]
+               [--test_dataset TEST_DATASET] [--no_degradation] [--no_load_VAE] [--use_v2_degradation] [--use_vae_which_epoch USE_VAE_WHICH_EPOCH] [--generate_pair] [--multi_scale_test MULTI_SCALE_TEST]
+               [--multi_scale_threshold MULTI_SCALE_THRESHOLD] [--mask_need_scale] [--scale_num SCALE_NUM] [--save_feature_url SAVE_FEATURE_URL] [--test_input TEST_INPUT] [--test_mask TEST_MASK] [--test_gt TEST_GT]        
+               [--scale_input] [--save_feature_name SAVE_FEATURE_NAME] [--test_rgb_old_wo_scratch] [--test_mode TEST_MODE] [--Quality_restore] [--Scratch_and_Quality_restore]
